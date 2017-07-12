@@ -2,6 +2,8 @@ import os
 #from subprocess import call
 import subprocess
 
+#Use bpz, a photonometric estimation program, en mass for multiple fields at a
+#time
 os.environ["HOME"] = "/home/doze"
 os.environ["BPZPATH"] = "$HOME/bpz-1.99.3"
 os.environ["PYTHONPATH"] = "$PYTHONPATH:$BPZPATH"
