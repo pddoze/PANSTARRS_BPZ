@@ -8,8 +8,8 @@ import subprocess
 
 def bpzRun(x):
     for filename in os.listdir(x):
-        fhalf, shalf = filename.rsplit('.',1)
         if filename.endswith(".cat"):
+            fhalf, shalf = filename.rsplit('.',1)
             subprocess.Popen(["python3", "/home/doze/bpz_1.99.3_py3/bpz.py", 
                               filename, "-ZMAX", "1.8", 
                               "-VERBOSE", "no", "-INTERP", "2", "-DZ", 
